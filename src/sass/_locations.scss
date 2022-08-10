@@ -1,0 +1,75 @@
+/* Locations */
+
+.locations-main {
+	.banner {
+		background-image: url('images/locations_header.png');
+	}
+	.locations-content {
+		ul {
+			margin-left: 15px;
+			li {
+				padding-left:22px;
+				margin-bottom: 16px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.banner {
+			background-position: 50%;
+			padding-bottom: 50px;
+			h1 {
+				padding:0;
+				line-height:1.25;
+			}
+		}
+	}
+}
+
+/* Paid city lander template */
+
+.locations-main {
+	.paid-city-lander-header {
+		background-color: $lightGreen3;
+		h1 span {
+			color: $lightGreen;
+		}
+
+		.zipcode_wrapper{
+			margin: 50px 0 65px;
+		    max-width: 500px;
+		    padding: 55px 0 55px;
+		    z-index:2;
+		}	
+		.hero_img{
+			display:block !important;
+			z-index: 1;
+		}
+		@media screen and (min-width: $mobile-screen) and (max-width: $tablet-screen) {
+			.mobile-hidden  .breadcrumbs-container {
+			    flex-direction: column;
+			    padding-top: 40px;
+			}
+			.zipcode_wrapper {
+				max-width:540px;
+			}
+			.hero_img{
+				width:60%;
+			}
+		}
+		@media screen and (max-width: $mobile-screen){
+			.zipcode_wrapper {
+				background-color: $whiteTransparent;
+				margin-top:65px;
+			    margin-left: -22px;
+			    margin-right: -22px;
+			    padding-left: 22px;
+			    padding-right: 22px;
+			}
+			.hero_img{
+				width:100%;
+			}
+		}
+
+	}
+}

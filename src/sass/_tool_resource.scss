@@ -1,0 +1,185 @@
+.page-template-template-tool-resource{
+    overflow-x: hidden;
+    .tool-resource-head{
+        h1{
+            font-size: 42px;
+            line-height: $line-height-base;
+            @media screen and (max-width: $mobile-screen){
+                font-size: $h2-font-size;
+            }
+            @media screen and (max-width: $small-mobile-screen){
+                font-size: 27px;
+            }
+        }
+    }
+    .tool-resource-block-wrap{
+        overflow: hidden;
+        .speed-test-block{
+            position: relative;
+            padding:60px 0;
+            &:before{
+                position: absolute;
+                content:'';
+                z-index: -1;
+                left: -1000px;
+                right: -1000px;
+                width:calc(100% + 2000px);
+                top:0;
+                height: 100%;
+                background: $blue5;
+            }
+            .row{
+                margin: 0;
+                .col{
+                    padding: 0;
+                }
+            }
+            .iframe-wrapper{
+                box-shadow: none;
+                padding:0;
+            }
+        }
+        .hmsdin-section{
+            background: $transparent;
+            @media screen and (max-width: $small-tablet-screen){
+                margin-bottom: 0;
+            }
+            .row-content{
+                .col-image{
+                    margin: 0;
+                    margin-bottom: 25px;
+                    .hmsdin-image-container{
+                        img{
+                            width: 350px;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+            .col{
+                flex: 0 0 100%;
+                max-width: 100%;
+                text-align: center;
+                h2{
+                    font-size: $h2-font-size;
+                    @media screen and (max-width: $small-tablet-screen){
+                        font-size: $h3-font-size;
+                    }
+                }
+                p{
+                    font-size: $h4-font-size;
+                }
+                .cta_btn{
+                    margin-top: 10px;
+                }
+            }
+        }
+        .hmsdin-speeds-section{
+            margin: 65px 0px;
+            @media screen and (max-width: $small-tablet-screen){
+                margin: 0 0 35px;
+                max-width: 510px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .row{
+                .col{
+                    @media screen and (max-width: $small-tablet-screen){
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                        margin-bottom: 10px;
+                    }
+                    @media screen and (max-width: $small-mobile-screen){
+                        display: block !important;
+                        flex: 0 0 80%;
+                        max-width: 80%;
+                        margin: 0 auto 10px;
+                    }
+                }
+            }
+        }
+        .glance-wrapper{
+            h3{
+                font-size: $h2-font-size;
+                line-height: $headings-line-height;
+                 @media screen and (max-width: $mobile-screen){
+                    font-size: $h3-font-size;
+                    line-height: 30px;
+                 }
+            }
+        }
+        .section-gray {
+            @media screen and (max-width: $mobile-screen){
+                margin-bottom: 30px;
+            }
+            &.bg-blue{
+              background: $lightBlue;
+              padding: 35px 0;
+            }
+            .topic-spotlight-left-features-container, .topic-spotlight-right-features-container, .topic-spotlight-zip-search-container {
+                margin-bottom: 30px;
+                .zip-popup-intro{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .zip-qualifier-block{
+            padding-top: 0;
+            .blue-container{
+                @media screen and (min-width: 1280px){
+                    width: 1240px;
+                    margin: 0 auto;
+                    border-radius: 40px;
+                }
+            }
+            .top-content{
+                h3{
+                    @media screen and (max-width: $small-mobile-screen){
+                        padding: 0 30px 30px;
+                    }
+                }
+                .zipcode{
+                    &.inner{
+                        margin: 0 auto -100px;
+                        padding: 36px 0;
+                        @media screen and (max-width: 1024px){
+                            margin: 0 auto -75px;
+                        }
+                        @media screen and (max-width: 640px){
+                            margin: 0 auto;
+                            max-width: 100%;
+                        }
+                        .search_wrap{
+                            background: $white;
+                            box-shadow: $primaryBoxShadow8;
+                            border-radius: 10px;
+                            max-width: 340px;
+                            padding: 11px 20px 11px 0px;
+                            margin:0 auto;
+                            .input-container{
+                                align-items: center;
+                                .icon-container{
+                                    margin-right: 0;
+                                    height: 50px;
+                                    border:0;
+                                    width: 70px;
+                                    span{
+                                        margin-top: 2px;
+                                    }
+                                }
+                                .zip_search_input{
+                                    border:0;
+                                    height:50px;
+                                }
+                                button{
+                                    height: 50px;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
